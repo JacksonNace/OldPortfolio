@@ -1,0 +1,265 @@
+/* #2d545e */
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: #121212;
+    height: 80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 4px solid #01A9C6;
+    max-width:100%;
+}
+
+.navbar_container{
+    display:flex;
+    justify-content:space-between;
+    height: 80px;
+    z-index:1;
+    width: 100%;
+    max-width:1250px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+
+.navbar_menu{
+    display:flex;
+    align-items:center;
+    list-style:none;
+}
+
+.navbar_item{
+    height:80px;
+}
+
+.navbar_links{
+    color:#FAF9F6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:125px;
+    text-decoration:none;
+    height:100%;
+}
+
+/* When I was trying to make this website I thought this hover option would be one of the hardest parts, but seeing html with the :hover taught me quite a bit! Love how easy this was */
+.navbar_links:hover{
+    color:#01A9C6;
+    transition:initial;
+    cursor:pointer;
+}
+
+
+/* hero section */
+.hero{
+    background:#121212;
+}
+
+.hero_container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width: 1200px;
+    color:#FAF9F6;
+    margin:0 auto;
+    height: 90%;
+    text-align:left;
+    align-items:left;
+    padding: 15px;
+}
+.hero_description{
+    font-size: 20px;
+}
+.iconofme{
+    width: 25%;
+    border-radius: 50%;
+  }
+
+.hero_heading{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #01A9C6;
+
+}
+
+.hero_role{
+    font-size:20px;
+    margin-bottom: 40px;
+}
+
+.contactinfo{
+    background:#121212;
+    height:100;
+    width: 300;
+}
+
+.row{
+    flex-direction:column;
+    align-items:center;
+    height: 80px;
+    padding:10px;
+    background: #121212;
+    
+
+}
+
+
+/* PROJECT CLASSES */
+
+.projects{
+    background: #121212;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    padding: 3rem 0;
+}
+
+.projects h1{
+    color:#01A9C6;
+    font-size: 40px;
+}
+
+.projects_list{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    max-width:100%
+}
+
+.projects_card{
+    margin:30px;
+    height: 425px;
+    width: 300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:top;
+    color:#FAF9F6;
+    background:#333333;
+    border: 10px solid #333333;
+    font-size:18px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    .projects_list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+    .projects_list {
+        grid-template-columns:1fr;
+    }
+}
+
+.buttons{
+    background:#333333;
+    justify-content:center;
+    position:flex;
+    bottom: 0;
+    height:60px;
+    margin:0;
+    padding:0;
+    display: flex;
+    border-radius: 12px;
+
+}
+.glinkbox{
+    background:#333333;
+    justify-content:center;
+    height:60px;
+    width:146px;
+    display:flex;
+    border-radius: 12px;
+    border: 3px solid #121212;
+}
+
+.github_button{
+    background: #333333;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    border-radius: 12px;
+}
+
+.ylinkbox{
+    background:#333333;
+    justify-content:center;
+    position:bottom;
+    height:60px;
+    width:145px;
+    display:flex;
+    border-radius: 12px;
+    border: 3px solid #121212;
+}
+.youtube_button{
+    background: #333333;
+    width: 52px;
+    height: 52px;
+    display:flex;
+    border-radius: 12px;
+}
+
+/* CONTACT ME CLASSES */
+
+.contact{
+    background-color:#121212;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+}
+.contact h1{
+    color:#01A9C6;
+    padding-top:15px;
+    font-size: 40px;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.inputfield{
+    display:flex;
+    flex-direction:column;
+    background-color:#fff;
+    width:70%;
+    margin-left:12%;
+    margin-right:12%;
+    font-size:20px;
+    padding:16px 16px;
+    border-radius: 10px;
+    border-color:#01A9C6;
+    margin-bottom:20px;
+}
+
+.submitbutton {
+    background-color:#333333;
+    color:#fff;
+    border-radius: 20px;
+    border-color:#01A9C6;
+    border-width:4px;
+    font-size:22px;
+    padding: 10px 18px;
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.submitbutton:hover{
+    color:#01A9C6;
+    transition:initial;
+    cursor:pointer;
+}
+
